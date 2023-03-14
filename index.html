@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Sidehustle || week one</title>
+		<link
+			rel="stylesheet"
+			href="main.css"
+		/>
+	</head>
+	<body>
+		<form action="/signup">
+			<div>
+				<input
+					type="text"
+					name="name"
+					placeholder="Name..."
+				/>
+			</div>
+			<div>
+				<input
+					type="email"
+					name="email"
+					placeholder="E-mail..."
+				/>
+			</div>
+			<div>
+				<input
+					type="tel"
+					name="phonenumber"
+					placeholder="Phonenumber..."
+				/>
+			</div>
+			<div>
+				<p>Gender</p>
+				<div>
+					<span>
+						<label for="male">Male: </label>
+						<input
+							type="radio"
+							name="gender"
+							id="male"
+							value="male"
+						/>
+					</span>
+					<span>
+						<label for="female">Female: </label>
+						<input
+							type="radio"
+							name="gender"
+							id="female"
+							value="female"
+						/>
+					</span>
+				</div>
+			</div>
+			<div>
+				<input
+					type="password"
+					name="password"
+					id="password"
+					placeholder="Password..."
+				/>
+			</div>
+			<button type="submit">Submit</button>
+			<div class="success-message success">
+				Form submitted successfully!
+			</div>
+			<div class="error-message error">
+				Please fill out all required fields.
+			</div>
+		</form>
+		<script src="app.js"></script>
+	</body>
+</html>
